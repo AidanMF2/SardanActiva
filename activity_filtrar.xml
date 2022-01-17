@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Filtrar"
+    >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fondo"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+
+        android:layout_height="0dp"
+        android:background="@drawable/forma_inicio"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".80"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+
+
+        <TextView
+            android:id="@+id/tv_entre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Entre el"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.22"
+            app:layout_constraintWidth_percent=".4" />
+
+        <EditText
+            android:id="@+id/calendar_inicio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+
+            android:text="24/11/2021"
+
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.22"
+            app:layout_constraintWidth_percent=".4" />
+
+        <Button
+            android:id="@+id/boton_ini"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+
+            android:text="@string/filtrar"
+            app:backgroundTint="@color/green_dark"
+
+            app:layout_constraintVertical_bias="0.22"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/calendar_inicio"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent=".6"></Button>
+
+        <TextView
+            android:id="@+id/tv_i"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="i el"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_entre"
+            app:layout_constraintVertical_bias="0.195"
+            app:layout_constraintWidth_percent=".4" />
+
+        <EditText
+            android:id="@+id/calendar_final"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/calendar_inicio"
+            app:layout_constraintVertical_bias="0.15"
+            app:layout_constraintWidth_percent=".4"
+            android:text="24/11/2021"
+            android:textStyle="bold"
+            />
+        <Button
+            android:id="@+id/boton_fi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+
+            android:text="@string/filtrar"
+            app:backgroundTint="@color/green_dark"
+
+            app:layout_constraintVertical_bias="0.4"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/calendar_inicio"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent=".6"></Button>
+
+
+        <Button
+            android:id="@+id/cerca_boton"
+            android:layout_width="247dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+
+            android:text="@string/filtrar"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="@+id/constraintLayout2"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/concursos"
+            app:layout_constraintWidth_percent=".6"
+            app:layout_constraintVertical_bias="0.3"/>
+
+        <CheckBox
+            android:id="@+id/aplecs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aplecs"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_i"
+
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintVertical_bias="0.15"
+            >
+
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/ballades"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ballades"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_i"
+
+            app:layout_constraintHorizontal_bias="0.47"
+            app:layout_constraintVertical_bias="0.15"
+            >
+
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/concerts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Concerts"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_i"
+
+            app:layout_constraintHorizontal_bias="0.9"
+            app:layout_constraintVertical_bias="0.15"
+            >
+
+        </CheckBox>
+
+
+
+
+
+
+        <CheckBox
+            android:id="@+id/cursets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cursets"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_i"
+
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintVertical_bias="0.4"
+            >
+
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/concursos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Concursos"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_i"
+
+            app:layout_constraintHorizontal_bias="0.50"
+            app:layout_constraintVertical_bias="0.4"
+            >
+
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/altres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Altres"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_i"
+
+            app:layout_constraintHorizontal_bias="0.9"
+            app:layout_constraintVertical_bias="0.4"
+            >
+
+        </CheckBox>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+
+        android:layout_height="100dp"
+
+        android:src="@drawable/recortelogo"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+
+    <Button
+        android:id="@+id/boton_filtrar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button2"
+        android:text="@string/busqueda"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.22"
+        app:layout_constraintWidth_percent=".4" />
+
+    <Button
+        android:id="@+id/boton_apuntados"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/custom_button2"
+
+        android:onClick="Actes_apuntats"
+        android:text="@string/actes"
+        android:textColor="@color/black"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.22"
+        app:layout_constraintWidth_percent=".4" />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/Navegacion"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:elevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:menu="@menu/bottom_navigation"
+        style="@style/BottomNavigation"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+
+
+        >
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</androidx.constraintlayout.widget.ConstraintLayout>

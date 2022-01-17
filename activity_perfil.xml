@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Perfil"
+    android:background="@color/colorSegundoApp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toTopOf="@id/Navegacion"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="6dp">
+
+                <ImageView
+                    android:id="@+id/foto_usuario"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+
+                    android:layout_gravity="center"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="14dp"
+                    android:src="@drawable/usuarioperfil">
+
+                </ImageView>
+
+                <LinearLayout
+                    android:id="@+id/ll1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/foto_usuario"
+                    android:layout_toRightOf="@+id/foto_usuario"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_nombre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:text="Nombre"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_apellido"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:text="Apellido"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="5dp"/>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_data_naix"
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/foto_usuario"
+                    android:layout_marginLeft="10dp"
+                    android:text="Data naixement"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_edad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Edat"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_descriute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_data_naix"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Descriu-te al món de la Sardana"
+                    android:textColor="@color/colorSegundoApp"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/et_descripcion"
+                    android:layout_width="357dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_descriute"
+                    android:layout_marginLeft="10dp"
+
+                    android:hint="Quin son els teus gustos? \nBusques companyia per anar a diferents activitats?"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_activitat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/et_descripcion"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Quines activitats t'agraden més?"
+                    android:textColor="@color/colorSegundoApp"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/et_activitat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_activitat"
+                    android:layout_marginLeft="10dp"
+                    android:hint="Introdueix les teves activitats"
+                    android:textSize="20sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_cobles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/et_activitat"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Quines cobles t'agraden més?"
+                    android:textColor="@color/colorSegundoApp"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/et_cobles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_cobles"
+                    android:layout_marginLeft="10dp"
+                    android:hint="Introdueix les teves cobles"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_municipi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/et_cobles"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Municipi"
+                    android:textColor="@color/colorSegundoApp"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/et_municipi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_municipi"
+                    android:layout_marginLeft="10dp"
+                    android:hint="Introdueix el teu municipi"
+                    android:textSize="20sp" />
+
+
+                <CheckBox
+                    android:id="@+id/cb_coche"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Cotxe"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/bt_guardar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:backgroundTint="@color/colorApp"
+                    android:text="Guardar" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/Navegacion"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:elevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:menu="@menu/bottom_navigation"
+        style="@style/BottomNavigation"
+        app:itemTextColor="@color/white"
+
+        >
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</androidx.constraintlayout.widget.ConstraintLayout>
